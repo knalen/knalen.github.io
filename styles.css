@@ -1,0 +1,298 @@
+/************ Resets **************/
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a, a:visited, a:visited {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+/**********Animations************/
+@keyframes animspin {
+    0% { transform: rotate(30deg); }
+    100% { transform: rotate(210deg); }
+}
+
+@keyframes animoffspin {
+    0% { transform: rotate(150deg); }
+    100% { transform: rotate(330deg); }
+}
+
+/*************Styles**************/
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    padding: 0 50px;
+    position: fixed;
+    top: 0; left: 0;
+    width: 25%;
+    height: 100%;
+    z-index: 200;
+    float: left;
+    background-color: rgba(44, 62, 80,1.0);
+    box-shadow: 0 0 18px 8px rgba(0,0,0,.3)
+    
+}
+
+header .logo {
+    float: left;
+    padding: 13px 10px;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    color: white;
+    
+}
+
+section {
+    padding: 100px 20px;
+    margin-left: 25%;
+    text-align: center;
+}
+
+header nav {
+    float: left;
+    position: absolute;
+    top: 10%;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 3px;
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+}
+
+.active {
+    text-decoration: none;
+    background: rgba(255,255,255,0.1); 
+}
+
+.socialmedia {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.socialmedia i {
+    font-size: 3em;
+    color: white;
+    opacity: 0.6;
+}
+
+.socialmedia i:hover {
+    opacity: 1;
+}
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: rgba(230, 126, 34,1.0)
+}
+
+.home h1 {
+    font-size: 5em;
+    color: white;
+}
+
+.home h2 {
+    font-size: 1.5em;
+}
+
+.home:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px; right: -40px; bottom: -40px; left: -40px;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(30deg);
+    animation: animspin 60s infinite linear;
+}
+
+.home:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px; right: -40px; bottom: -40px; left: -40px;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(150deg);
+    animation: animoffspin 50s infinite linear;
+}
+
+.about {
+    padding-bottom: 0;
+    height: 100vh;
+}
+
+.mypic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px 3px rgba(0,0,0, 0.8)
+}
+
+.about-title {
+    margin-bottom: 60px;
+}
+
+.shortdescription {
+    text-align: justify;
+}
+
+.shortdescription a {
+    text-decoration: underline;
+}
+
+.portfolio {
+    padding-top: 30px;
+}
+
+.project {
+    position: relative;
+    overflow: auto;
+}
+
+.projectTitle {
+    font-size: 30px;
+    margin: 0px;
+    padding: 30px 0px 10px 0px !important;
+}
+
+.projectImage {
+    width: 42%;
+    margin-right: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    max-width: 500px;
+    float: left;
+}
+
+.lgused {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lang {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0px 8px 0px 8px;
+    margin: 5px;
+    transition: all .3s ease;
+    cursor: default;
+}
+
+.lang:hover {
+    border-color: black;
+    background-color: rgba(44, 62, 80,1);
+    color: white;
+}
+
+.projectDesc {
+    position: relative;
+    overflow: hidden;
+}
+
+.projectText {
+    width: 350px;
+    height: 235px;
+    position: absolute;
+    top: -15px;
+    right: 100px;
+    text-align: justify;
+}
+
+.projLinks {
+    clear: both;
+    width: 294px;
+    margin: auto;
+    padding-left: 1px;
+    text-align: center;   
+}
+
+.projectLink {
+    color: black;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    width: 142px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+    overflow: auto;
+    transition: all 0.3s ease;
+}
+
+.projectLink:hover {
+    background-color: rgba(230, 126, 34,0.8);
+    color: white;
+}
+
+.email {
+    padding: 5px;
+    margin: 50px;
+}
+
+.contact h1 {
+    font-size: 35px;
+}
+
+.email p {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#resumeBtn {
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(230, 126, 34,1);
+    color: #fff;
+}
+
+
+
+
+

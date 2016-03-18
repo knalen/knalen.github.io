@@ -33,6 +33,7 @@ a, a:visited, a:visited {
 .container {
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .container:after {

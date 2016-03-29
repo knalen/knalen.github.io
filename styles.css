@@ -177,6 +177,17 @@ header nav ul li a:hover {
     
 }
 
+.descMe {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0px 8px 0px 8px;
+    background-color: rgba(44, 62, 80,1);
+    margin: 5px;
+    cursor: default;
+    color: white;
+}
+
 .about-title {
     margin-bottom: 60px;
 }
